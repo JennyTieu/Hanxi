@@ -1,0 +1,50 @@
+@import "colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.musthave__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.musthave__nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--light-gray);
+    transition: 0.3s;
+}
+
+.musthave__nav a:hover {
+    color: var(--dark-gray);
+}
+
+.musthave__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.musthave__card {
+    display: grid;
+    gap: 0.5rem;
+    color: var(--dark-gray);
+}
+
+.musthave__card h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.musthave__card p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.musthave__card p del {
+    font-weight: 400;
+    color: var(--light-gray);
+}

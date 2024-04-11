@@ -1,0 +1,134 @@
+@import "colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__title {
+    padding-bottom: 0.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+    position: relative;
+}
+
+.section__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 75px;
+    background-color: var(--dark-gray);
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    font-size: 0.8rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (width < 900px) {
+    header {
+        margin-top: 5rem;
+    }
+
+    .sale__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .musthave__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .news__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brands__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .instagram__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__bar {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .footer__form {
+        justify-content: center;
+    }
+}
+
+@media (width < 600px) {
+    .nav__links {
+        display: none;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .header__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header__image {
+        display: none;
+    }
+
+    .sale__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .musthave__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brands__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

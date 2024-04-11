@@ -1,0 +1,50 @@
+@import "colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.header__bar {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+}
+
+header {
+    margin-top: 10rem;
+    background-color: var(--light-gray);
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.header__content p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--light-gray);
+    margin-bottom: 0.5rem;
+}
+
+.header__content h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+.header__content .btn {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+}
+
+.header__image {
+    position: relative;
+}
+
+.header__image img {
+    max-width: 400px;
+    position: absolute;
+    bottom: -5rem;
+}

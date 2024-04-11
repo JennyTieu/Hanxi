@@ -1,0 +1,62 @@
+@import "colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.sale__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.sale__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.sale__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--light-gray);
+    text-align: center;
+}
+
+.sale__title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sale__title span {
+    font-size: 2.5rem;
+}
+
+.sale__subtitle {
+    font-size: 1rem;
+}
+
+.sale__btn {
+    margin-top: 2rem;
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
+}
+
+.sale__card::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.sale__card:hover::before {
+    top: 0;
+}
+
+.sale__card:hover .sale__btn {
+    color: var(--dark-gray);
+    background-color: var(--light-gray);
+}
