@@ -22,6 +22,17 @@ app.use(session({
 app.listen(3000, function () {
     console.log('listening on 3000');
 });
+
+//verbindung zur Datenbank
+const sqlite3 = require('sqlite3').verbose();
+
+let db = new sqlite3.Database('shop.db', (err) => {
+    if (err) {
+        console.error(err.message);
+    }
+    console.log('Connected to the shop database.');
+});
+
 //CSS files laden
 app.use(express.static('stylesheets'));
 
